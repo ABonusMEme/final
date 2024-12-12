@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <style>
+    .landing-page {
+      background-color: #fff9e0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .landing-page .div {
+      background-color: #fff9e0;
+      width: 1440px;
+      height: 5231px;
+      position: relative;
+    }
+
+    .landing-page .overlap {
+      position: absolute;
+      width: 1280px;
+      height: 635px;
+      top: 360px;
+      left: 80px;
+    }
+
+    .landing-page .frame {
+      display: flex;
+      flex-direction: column;
+      width: 929px;
+      align-items: flex-start;
+      gap: 64px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .landing-page .text-wrapper {
+      position: relative;
+      width: fit-content;
+      margin-top: -1.00px;
+      font-family: "Test Founders Grotesk Condensed-Bold", Helvetica;
+      font-weight: 700;
+      color: #000000;
+      font-size: 200px;
+      letter-spacing: 0;
+      line-height: normal;
+      white-space: nowrap;
+    }
+
+    .landing-page .p {
+      position: relative;
+      width: 633px;
+      height: 336px;
+      font-family: "Test Founders Grotesk-Regular", Helvetica;
+      font-weight: 400;
+      color: #000000;
+      font-size: 32px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .landing-page .element-wrapper {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+      position: absolute;
+      top: 18px;
+      left: 835px;
+    }
+
+    .landing-page .element {
+      position: relative;
+      width: 425px;
+      height: 572px;
+      object-fit: cover;
+    }
+
+    .landing-page .header {
+      position: absolute;
+      width: 853px;
+      height: 360px;
+      top: 0;
+      left: 294px;
+    }
+
+    .landing-page .overlap-group {
+      position: relative;
+      width: 615px;
+      height: 360px;
+      left: 120px;
+    }
+
+    .landing-page .frame-2 {
+      display: inline-flex;
+      align-items: center;
+      gap: 79px;
+      padding: 84px;
+      position: absolute;
+      top: 154px;
+      left: 0;
+    }
+
+    .landing-page .text-wrapper-2 {
+      position: relative;
+      width: fit-content;
+      margin-top: -1.00px;
+      font-family: "Test Founders Grotesk-Regular", Helvetica;
+      font-weight: 400;
+      color: #000000;
+      font-size: 32px;
+      letter-spacing: 0;
+      line-height: normal;
+      white-space: nowrap;
+    }
+
+    .landing-page .jayden-ribeiro-wrapper {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 48px 49px;
+      position: absolute;
+      top: 0;
+      left: 150px;
+    }
+
+    .landing-page .jayden-ribeiro {
+      position: relative;
+      width: fit-content;
+      margin-top: -1.00px;
+      font-family: "Test Founders Grotesk-Bold", Helvetica;
+      font-weight: 700;
+      color: #000000;
+      font-size: 64px;
+      letter-spacing: 0;
+      line-height: 55px;
+    }
+
+    .landing-page .frame-3 {
+      display: flex;
+      flex-wrap: wrap;
+      width: 1342px;
+      align-items: flex-start;
+      gap: 29px 35px;
+      position: absolute;
+      top: 2108px;
+      left: 49px;
+    }
+
+    .landing-page .text-wrapper-3 {
+      position: relative;
+      width: fit-content;
+      margin-top: -1.00px;
+      font-family: "Test Founders Grotesk Condensed-Bold", Helvetica;
+      font-weight: 700;
+      color: #000000;
+      font-size: 128px;
+      letter-spacing: 0;
+      line-height: normal;
+      white-space: nowrap;
+    }
+
+    .landing-page .algonquin {
+      position: relative;
+      width: 837px;
+      height: 627px;
+      object-fit: cover;
+    }
+
+    .landing-page .new-york {
+      position: relative;
+      width: 470px;
+      height: 627px;
+      object-fit: cover;
+    }
+
+    .landing-page .img {
+      position: relative;
+      width: 470px;
+      height: 433px;
+      object-fit: cover;
+    }
+
+    .landing-page .long-exposure {
+      position: relative;
+      width: 837px;
+      height: 433px;
+      object-fit: cover;
+    }
+
+    .landing-page .frame-4 {
+      display: flex;
+      flex-wrap: wrap;
+      width: 1292px;
+      align-items: flex-start;
+      gap: 42px 57px;
+      position: absolute;
+      top: 1059px;
+      left: 64px;
+    }
+
+    .landing-page .unnamed {
+      position: relative;
+      width: 424px;
+      height: 408px;
+      object-fit: cover;
+    }
+
+    .landing-page .text-wrapper-4 {
+      position: relative;
+      width: 673px;
+      height: 213px;
+      font-family: "Test Founders Grotesk-Regular", Helvetica;
+      font-weight: 400;
+      color: #000000;
+      font-size: 40px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .landing-page .screenshot {
+      position: relative;
+      width: 515px;
+      height: 404px;
+      object-fit: cover;
+    }
+
+    .landing-page .frame-5 {
+      display: flex;
+      flex-direction: column;
+      width: 847px;
+      align-items: flex-start;
+      gap: 43px;
+      padding: 70px 40px 0px 114px;
+      position: absolute;
+      top: 3440px;
+      left: 0;
+    }
+
+    .landing-page .text-wrapper-5 {
+      position: relative;
+      align-self: stretch;
+      margin-top: -1.00px;
+      font-family: "Test Founders Grotesk Condensed-Bold", Helvetica;
+      font-weight: 700;
+      color: #000000;
+      font-size: 140px;
+      letter-spacing: 0;
+      line-height: 104px;
+    }
+
+    .landing-page .hi-i-m-jayden {
+      position: relative;
+      align-self: stretch;
+      font-family: "Test Founders Grotesk-Regular", Helvetica;
+      font-weight: 400;
+      color: #000000;
+      font-size: 24px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .landing-page .element-aa-af-d-wrapper {
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px 10px;
+      padding: 70px 55px;
+      position: absolute;
+      top: 3440px;
+      left: 847px;
+    }
+
+    .landing-page .element-aa-af-d {
+      position: relative;
+      width: 483px;
+      height: 650px;
+      object-fit: cover;
+    }
+
+    .landing-page .frame-6 {
+      display: flex;
+      flex-direction: column;
+      width: 1066px;
+      align-items: center;
+      gap: 20px;
+      position: absolute;
+      top: 4589px;
+      left: 187px;
+    }
+
+    .landing-page .text-wrapper-6 {
+      position: relative;
+      align-self: stretch;
+      margin-top: -1.00px;
+      font-family: "Test Founders Grotesk Condensed-Bold", Helvetica;
+      font-weight: 700;
+      color: #000000;
+      font-size: 200px;
+      letter-spacing: 0;
+      line-height: 200px;
+    }
+
+    .landing-page .got-questions-or {
+      position: relative;
+      width: 633px;
+      height: 131px;
+      font-family: "Test Founders Grotesk-Regular", Helvetica;
+      font-weight: 400;
+      color: #000000;
+      font-size: 32px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .landing-page .text-wrapper-7 {
+      position: relative;
+      align-self: stretch;
+      font-family: "Test Founders Grotesk-Medium", Helvetica;
+      font-weight: 500;
+      color: #000000;
+      font-size: 64px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+      text-decoration: underline;
+    }
+
+    .landing-page .text-wrapper-8 {
+      position: relative;
+      align-self: stretch;
+      font-family: "Test Founders Grotesk-Medium", Helvetica;
+      font-weight: 500;
+      color: #000000;
+      font-size: 64px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+  </style>
+</head>
+<body>
+  <div class="landing-page">
+    <div class="div">
+      <div class="overlap">
+        <div class="frame">
+          <div class="text-wrapper">WHO I AM</div>
+          <p class="p">
+            Hey, I’m Jayden! A second year GBDA student attending the University of Waterloo. I have experience in
+            Graphic Design, Product Design, and Marketing. I can aid you in creating cutting-edge digital products,
+            from UX research to UI design and prototyping.
+          </p>
+        </div>
+        <div class="element-wrapper"><img class="element" src="img/IMG_7890_50.jpeg" /></div>
+      </div>
+      <div class="header">
+        <div class="overlap-group">
+          <div class="frame-2">
+            <div class="text-wrapper-2">Projects</div>
+            <div class="text-wrapper-2">About</div>
+            <div class="text-wrapper-2">Contact</div>
+          </div>
+          <div class="jayden-ribeiro-wrapper">
+            <div class="jayden-ribeiro">Jayden <br />Ribeiro</div>
+          </div>
+        </div>
+      </div>
+      <div class="frame-3">
+        <div class="text-wrapper-3">Photography</div>
+        <img class="algonquin" src="img/algonquin-33-1.png" />
+        <img class="new-york" src="img/new-york-6870-1.png" />
+        <img class="img" src="img/new-york-6863-1.png" />
+        <img class="long-exposure" src="img/long-exposure-1.png" />
+      </div>
+      <div class="frame-4">
+        <div class="text-wrapper-3">Personal Projects</div>
+        <img class="unnamed" src="img/unnamed-1.png" />
+        <p class="text-wrapper-4">
+          I Created a full rebrand of the brand Elements, this included Packaging redesigns, digital and physical
+          mockups, marketing campaign and advertisements.
+        </p>
+        <p class="text-wrapper-4">
+          I Created a customer profile for a blockchain healthcare app. This profile has all the metrics like pains,
+          gains and motivations.
+        </p>
+        <img class="screenshot" src="img/screenshot-2024-12-10-at-7-48-29-PM-1.png" />
+      </div>
+      <div class="frame-5">
+        <div class="text-wrapper-5">ABOUT ME</div>
+        <p class="hi-i-m-jayden">
+          Hi! I’m Jayden Ribeiro, a 19-year-old creative from Toronto, Canada. I thrive at the intersection of design,
+          innovation, and storytelling, combining my skills and passions to create meaningful, user-focused projects.
+          Whether I’m designing, brainstorming solutions, or capturing the world through my camera lens, I’m driven by
+          curiosity and a deep appreciation for impactful ideas. My journey is fueled by a commitment to learning and continuing to grow, not only as a designer but as a person. If you're looking for someone who's passionate, innovative, and eager to take on new challenges, let's create something extraordinary together! </p> </div> <div class="element-aa-af-d-wrapper"> <img class="element-aa-af-d" src="img/image-1.png" /> </div> <div class="frame-6"> <div class="text-wrapper-6">CONTACT ME</div> <p class="got-questions-or"> Got questions or ideas? I'd love to hear from you! Let's collaborate and create something amazing together. </p> <a href="mailto:jayden@example.com" class="text-wrapper-7">jayden@example.com</a> <p class="text-wrapper-8">Toronto, Canada</p> </div> </div>
+
+</div> </body> </html>
+
+
+
+
+
+

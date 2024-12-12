@@ -3,6 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     .landing-page {
       background-color: #fff9e0;
       display: flex;
@@ -115,6 +119,7 @@
       letter-spacing: 0;
       line-height: normal;
       white-space: nowrap;
+      text-decoration: none;
     }
 
     .landing-page .jayden-ribeiro-wrapper {
@@ -342,66 +347,66 @@
       letter-spacing: 0;
       line-height: normal;
     }
+    img {
+      border-radius: 10%;
+    }
   </style>
 </head>
 <body>
   <div class="landing-page">
     <div class="div">
-      <div class="overlap">
-        <div class="frame">
-          <div class="text-wrapper">WHO I AM</div>
-          <p class="p">
-            Hey, I’m Jayden! A second year GBDA student attending the University of Waterloo. I have experience in
-            Graphic Design, Product Design, and Marketing. I can aid you in creating cutting-edge digital products,
-            from UX research to UI design and prototyping.
-          </p>
-        </div>
-        <div class="element-wrapper"><img class="element" src="img/IMG_7890_50.jpeg" /></div>
-      </div>
+      <!-- Header -->
       <div class="header">
         <div class="overlap-group">
           <div class="frame-2">
-            <div class="text-wrapper-2">Projects</div>
-            <div class="text-wrapper-2">About</div>
-            <div class="text-wrapper-2">Contact</div>
-          </div>
-          <div class="jayden-ribeiro-wrapper">
-            <div class="jayden-ribeiro">Jayden <br />Ribeiro</div>
+            <a href="#projects" class="text-wrapper-2">Projects</a>
+            <a href="#about" class="text-wrapper-2">About</a>
+            <a href="#contact" class="text-wrapper-2">Contact</a>
           </div>
         </div>
+        <div class="jayden-ribeiro-wrapper">
+          <div class="jayden-ribeiro">Jayden Ribeiro</div>
+        </div>
       </div>
-      <div class="frame-3">
-        <div class="text-wrapper-3">Photography</div>
-        <img class="algonquin" src="img/algonquin-33-1.png" />
-        <img class="new-york" src="img/new-york-6870-1.png" />
-        <img class="img" src="img/new-york-6863-1.png" />
-        <img class="long-exposure" src="img/long-exposure-1.png" />
+
+      <!-- Hero Section -->
+      <div class="overlap">
+        <div class="frame">
+          <div class="text-wrapper">Hello!</div>
+          <p class="p">Hey, I’m Jayden! A second year GBDA student attending the University of Waterloo. I have experience in Graphic Design, Product Design, and Marketing. I can aid you in creating cutting-edge digital products, from UX research to UI design and prototyping. </p>
+        </div>
+        <div class="element-wrapper">
+          <img src="IMG_7890_50.jpg" alt="Creative Image" class="element" />
+        </div>
       </div>
-      <div class="frame-4">
-        <div class="text-wrapper-3">Personal Projects</div>
-        <img class="unnamed" src="img/unnamed-1.png" />
-        <p class="text-wrapper-4">
-          I Created a full rebrand of the brand Elements, this included Packaging redesigns, digital and physical
-          mockups, marketing campaign and advertisements.
-        </p>
-        <p class="text-wrapper-4">
-          I Created a customer profile for a blockchain healthcare app. This profile has all the metrics like pains,
-          gains and motivations.
-        </p>
-        <img class="screenshot" src="img/screenshot-2024-12-10-at-7-48-29-PM-1.png" />
+
+      <!-- Project Section -->
+      <div id="projects" class="frame-3">
+        <div class="text-wrapper-3">Projects</div>
+        <img src="path/to/project1.jpg" alt="Project 1" class="algonquin" />
+        <img src="path/to/project2.jpg" alt="Project 2" class="new-york" />
+        <img src="path/to/project3.jpg" alt="Project 3" class="img" />
+        <img src="path/to/project4.jpg" alt="Project 4" class="long-exposure" />
       </div>
-      <div class="frame-5">
-        <div class="text-wrapper-5">ABOUT ME</div>
-        <p class="hi-i-m-jayden">
-          Hi! I’m Jayden Ribeiro, a 19-year-old creative from Toronto, Canada. I thrive at the intersection of design,
-          innovation, and storytelling, combining my skills and passions to create meaningful, user-focused projects.
-          Whether I’m designing, brainstorming solutions, or capturing the world through my camera lens, I’m driven by
-          curiosity and a deep appreciation for impactful ideas. My journey is fueled by a commitment to learning and continuing to grow, not only as a designer but as a person. If you're looking for someone who's passionate, innovative, and eager to take on new challenges, let's create something extraordinary together! </p> </div> <div class="element-aa-af-d-wrapper"> <img class="element-aa-af-d" src="img/image-1.png" /> </div> <div class="frame-6"> <div class="text-wrapper-6">CONTACT ME</div> <p class="got-questions-or"> Got questions or ideas? I'd love to hear from you! Let's collaborate and create something amazing together. </p> <a href="mailto:jayden@example.com" class="text-wrapper-7">jayden@example.com</a> <p class="text-wrapper-8">Toronto, Canada</p> </div> </div>
 
-</div> </body> </html>
-
-
+      <!-- About Section -->
+      <div id="about" class="frame-4">
+        <div class="unnamed">
+          <img src="path/to/about-image.jpg" alt="About Image" />
+        </div>
+        <div class="text-wrapper-4">I Created a full rebrand of the brand Elements, this included Packaging redesigns, digital and physical mockups, marketing campaign and advertisements.</div>
+        <img src="path/to/about-screenshot.jpg" alt="About Screenshot" class="screenshot" />
+      </div>
 
 
-
-
+      <!-- Contact Section -->
+      <div id="contact" class="frame-6">
+        <div class="text-wrapper-6">Contact Me</div>
+        <p class="got-questions-or">Got questions or want to collaborate?</p>
+        <a href="mailto:your.email@example.com" class="text-wrapper-7">Email Me</a>
+        <p class="text-wrapper-8">Or reach out on social media!</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
